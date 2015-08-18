@@ -1,0 +1,13 @@
+Index: libsysstat/CMakeLists.txt
+===================================================================
+--- libsysstat.orig/CMakeLists.txt	2015-08-18 13:22:13.947934029 +0000
++++ libsysstat/CMakeLists.txt	2015-08-18 13:22:34.378164935 +0000
+@@ -3,7 +3,7 @@
+ project(libsysstat)
+ 
+ # Set default installation paths
+-set(LIB_INSTALL_DIR "lib${LIB_SUFFIX}" CACHE PATH "Installation path for libraries")
++set(LIB_INSTALL_DIR "${CMAKE_INSTALL_LIBDIR}" CACHE PATH "Installation path for libraries")
+ set(INCLUDE_INSTALL_DIR include CACHE PATH "Installation path for includes")
+ 
+ set(MAJOR_VERSION 0)
